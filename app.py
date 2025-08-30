@@ -72,7 +72,6 @@ def load_data(archivos=None):
                     datos[f"{nombre_archivo}_{hoja}"] = df
             except Exception as e:
                 st.error(f"Error cargando {archivo.name}: {e}")
-    
     return datos
 
 # Función para guardar datos en el archivo Excel
